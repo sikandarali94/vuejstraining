@@ -19,6 +19,11 @@
     <section id="user-goal">
       <h2>My Course Goal</h2>
       <p>{{ courseGoal }}</p>
+      <!-- {{}} string interpolation is only available between opening and closing element tags. If we want to pass a
+      dynamic value to an attribute, we use the v-bind directive. A directive is an extra instruction we add in the HTML
+      code. All built-in directives that are shipped with Vue start with v-. v-bind tells Vue to set or bind the value
+      of something, basically just means of an attribute on an HTML element. -->
+      <p>Learn more <a v-bind:href="vueLink">about Vue</a>.</p>
     </section>
   </body>
 </html>
